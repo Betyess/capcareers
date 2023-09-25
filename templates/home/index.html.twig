@@ -1,0 +1,321 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+{% block body %}
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero">
+        <div class="container position-relative">
+            <div class="row gy-5" data-aos="fade-in">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <h2>Trouvez Votre Prochain <span>Emploi / Candidat</span></h2>
+                    <p>Trouvez votre prochain emploi, bâtissez votre avenir.<br> Découvrez des opportunités qui correspondent à vos ambitions.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="/register" class="btn-get-started">Commencez dès Maintenant</a>
+                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><span>Voir Nos Offres d'Emploi</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="{{ asset('assets/img/hero-img.svg')}}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+                </div>
+            </div>
+        </div>
+
+        <div class="icon-boxes position-relative">
+            <div class="container position-relative">
+                <div class="row gy-4 mt-5">
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-search"></i></div>
+                            <h4 class="title"><a href="#" class="stretched-link">Moteur Matching</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                            <h4 class="title"><a href="#" class="stretched-link">Gestion Entretiens</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">Suivi des Offres</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-gem"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">Gestion des Candidats</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <main id="main">
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Cap Careers pour les entreprises</h2>
+                    <p>Trouvez les Meilleurs Talents pour Votre Entreprise</p>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <img src="{{ asset('assets/img/about.jpg')}}" class="img-fluid rounded-4 mb-4" alt="">
+                        <p>Nous simplifions le recrutement pour les entreprises en utilisant des algorithmes avancés pour sélectionner les meilleurs candidats en fonction de vos critères. Ensuite, nous facilitons la mise en contact entre vous et les candidats choisis. Notre plateforme offre une solution efficace pour organiser des entretiens, partager des informations et finaliser les embauches. </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content ps-0 ps-lg-5">
+                            <p>
+                                Nous vous permettons d'économiser du temps et des ressources tout en vous assurant que vous recrutez les talents qui correspondent le mieux à votre entreprise.
+                            </p>
+                            <div class="position-relative mt-4">
+                                <img src="{{ asset('assets/img/about-2.jpg')}}" class="img-fluid rounded-4" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Us Section -->
+
+
+
+        <!-- ======= Stats Counter Section ======= -->
+        <section id="stats-counter" class="stats-counter">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row gy-4 align-items-center">
+
+                    <div class="col-lg-6">
+                        <img src="{{ asset('assets/img/stats-img.svg')}}" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="stats-item d-flex align-items-center">
+                            <span data-purecounter-start="0" data-purecounter-end="840" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Candidats</strong> </p>
+                        </div><!-- End Stats Item -->
+
+                        <div class="stats-item d-flex align-items-center">
+                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Offres d'emploi</strong> </p>
+                        </div><!-- End Stats Item -->
+
+                        <div class="stats-item d-flex align-items-center">
+                            <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Profil acceptés</strong></p>
+                        </div><!-- End Stats Item -->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Stats Counter Section -->
+
+
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Témoignages</h2>
+                    <p>Des employeurs et des candidats satisfaits de notre plateforme</p>
+                </div>
+                <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+
+                        <!-- Témoignage 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="d-flex align-items-center">
+                                        <img src="{{ asset('assets/img/testimonials/testimonials-1.jpg')}}" class="testimonial-img flex-shrink-0" alt="Saul Goodman">
+                                        <div>
+                                            <h3>Saul Goodman</h3>
+                                            <h4>PDG & Fondateur</h4>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        Grâce à Cap Careers, nous avons trouvé les talents les plus qualifiés pour notre entreprise. Le processus de recrutement n'a jamais été aussi efficace !
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Témoignage 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="d-flex align-items-center">
+                                        <img src="{{ asset('assets/img/testimonials/testimonials-2.jpg')}}" class="testimonial-img flex-shrink-0" alt="Sara Wilsson">
+                                        <div>
+                                            <h3>Sara Wilsson</h3>
+                                            <h4>Designer</h4>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        Cap Careers m'a aidé à découvrir des opportunités de carrière incroyables. Je recommande cette plateforme à tous les chercheurs d'emploi !
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Témoignage 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="d-flex align-items-center">
+                                        <img src="{{ asset('assets/img/testimonials/testimonials-3.jpg')}}" class="testimonial-img flex-shrink-0" alt="Jena Karlis">
+                                        <div>
+                                            <h3>Jena Karlis</h3>
+                                            <h4>Propriétaire de Magasin</h4>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        Grâce à Cap Careers, j'ai pu trouver les employés les plus compétents pour mon entreprise. Un service exceptionnel !
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Témoignage 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <div class="d-flex align-items-center">
+                                        <img src="{{ asset('assets/img/testimonials/testimonials-4.jpg')}}" class="testimonial-img flex-shrink-0" alt="Matt Brandon">
+                                        <div>
+                                            <h3>Matt Brandon</h3>
+                                            <h4>Freelancer</h4>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        Cap Careers m'a permis de trouver des opportunités de freelance passionnantes. Un service exceptionnel pour les travailleurs indépendants !
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials Section -->
+
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="row gx-lg-0 gy-4">
+
+                    <div class="col-lg-4">
+
+                        <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                            <div class="info-item d-flex">
+                                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                <div>
+                                    <h4>Adresse:</h4>
+                                    <p>A108 Rue de la liberté, Paris</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="info-item d-flex">
+                                <i class="bi bi-envelope flex-shrink-0"></i>
+                                <div>
+                                    <h4>Email:</h4>
+                                    <p>info@example.com</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="info-item d-flex">
+                                <i class="bi bi-phone flex-shrink-0"></i>
+                                <div>
+                                    <h4>Téléphone:</h4>
+                                    <p>+1 5589 55488 55</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="info-item d-flex">
+                                <i class="bi bi-clock flex-shrink-0"></i>
+                                <div>
+                                    <h4>Horaires d'ouverture:</h4>
+                                    <p>Lun-Sam: 08AM - 19PM</p>
+                                </div>
+                            </div><!-- End Info Item -->
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Envoyer</button></div>
+                        </form>
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+{% endblock %}

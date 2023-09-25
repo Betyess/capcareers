@@ -1,0 +1,43 @@
+
+<header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="/" class="logo d-flex align-items-center">
+            <h1>Cap Careers<span>.</span></h1>
+        </a>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="active"><a href="/" id="link_home" >Accueil</a></li>
+
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    {% set link = '/candidat/info' %}
+                    {% set profileLink = 'Mon profile' %}
+                    {% set user = app.user %}
+                    {% if user.societe is defined %}
+                        {% set link = '/employeur' %}
+                        {% set profileLink = 'Mon entreprise' %}
+                        <li ><a id="link_candidats" href="/candidats/search">Candidats</a></li>
+                        <li ><a id="link_candidats_favoris" href="/candidats/search?favourite=1" class="">Mes candidats favoris</a></li>
+                    {% else %}
+                        <li ><a id="link_offres" href="/search" >Offres d'emploi</a></li>
+                        <li ><a id="link_offres_favoris" href="/search?favourite=1" class="">Offres favoris</a></li>
+                    {% endif %}
+                    <li ><a id="link_profile" href="{{ link }}" class="">{{ profileLink }}</a></li>
+                    <li ><a id="link_logout" href="/logout" class="">Se déconnecter</a></li>
+                {% else %}
+                    <li ><a id="link_offres" href="/search">Offres d'emploi</a></li>
+                    <li><a id="link_login" href="/login" class="">Se connecter</a></li>
+                    <li ><a id="link_register" href="/register" class="">S'inscrire</a></li>
+                 {% endif %}
+            </ul>
+        </nav><!-- .navbar -->
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+</header>
+
+<script>
+
+</script>

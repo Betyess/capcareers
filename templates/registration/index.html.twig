@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+{% block style %}
+    <style>
+        .footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <section class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center px-4 py-5 my-4 my-lg-5">
+            <div class="w-100 bg-white rounded-lg shadow-lg border mb-0 md:mb-0 max-md-width-xl">
+                <div class="p-4 p-md-5 space-y-4 md:space-y-5">
+                    <h1 class="text-center h2 fw-bold">
+                        Choisissez le type de compte
+                    </h1>
+                    <div class="d-flex justify-content-center align-items-center gap-4 py-4">
+                        <a href="/register-candidat" class="btn btn-outline-primary py-3 px-4 text-xl font-weight-bold">Candidat</a>
+                        <span>Ou</span>
+                        <a href="/register-employeur" class="btn btn-outline-primary py-3 px-4 text-xl font-weight-bold">Employeur</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
